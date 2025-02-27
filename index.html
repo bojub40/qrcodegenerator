@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>QR CODE GENERATOR</title>
+</head>
+<body class="bg-[#1E3852]">
+    <div class="px-6">
+        <div class="pt-60">
+            <p class="text-center text-gray-300 font-bold pb-4 text-lg md:text-4xl">GENERATE QR CODE FOR FREE</p>
+            <div class="flex flex-col items-center justify-center mx-auto">
+                <div>
+                    <input required id="qrText" type="text" placeholder="Enter Your URL" class="rounded-md w-full border bg-gray-200 shadow-md md:w-150 p-2 focus:outline-none">
+                </div>
+
+                
+                <div id="img-box" class="mt-2 mb-2">
+                    <img src="" alt="" id="qrImage">
+                </div>
+
+                <div class="mt-2">
+                <button onclick="generateQR()" class="md:px-6 py-2 inline-block px-4 font-bold  bg-gray-400 rounded-md border shadow-md" id="gen-btn">Generate Code</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+    <script src="main.js"></script>
+</html>
